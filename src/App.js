@@ -44,9 +44,9 @@ export default function App() {
       {/* Logos Section */}
       <section className="bg-white py-8 text-center">
         <p className="mb-4 text-lg text-green-600">We are trusted by</p>
-        <div className="flex justify-center flex-wrap gap-6">
+        <div className=" flex justify-center flex-wrap gap-6">
           {[...Array(5)].map((_, i) => (
-            <div key={i} className=" ml-12 mr-12 text-xl font-medium w-24 h-10 p-2 bg-gray-100 rounded shadow-sm">Brand {i + 1}</div>
+            <div key={i} className=" ml-12 mr-12 text-sm md:text-lg font-medium w-24 h-10 p-2 bg-gray-100 rounded shadow-sm">Brand {i + 1}</div>
           ))}
         </div>
       </section>
@@ -55,7 +55,7 @@ export default function App() {
       <section className=" w-[78%] mx-auto bg-white py-12 px-4">
         <h3 className="text-center text-3xl font-bold mb-2 ">The smart choice for your team</h3>
         <h3 className="text-gray-700 text-center text-xl  mb-10"> Everything you need to manage your desired business</h3>
-        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className=" grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           <FeatureCard title="Seamless Collaboration" />
           <FeatureCard title="All in one Solution" />
           <FeatureCard title="Managed Static Data" />
@@ -91,7 +91,7 @@ export default function App() {
 
     {/* Right Side - Image Placeholder */}
     <div className="w-full h-64 bg-gray-200 rounded-xl flex items-center justify-center">
-     <img src= {JobDetailImg}/>
+     <img src= {JobDetailImg} className='w-full h-full'/>
     </div>
   </div>
 </section>
@@ -100,7 +100,7 @@ export default function App() {
       {/* Google Maps Integration */}
       <section className="bg-yellow-200 rounded-lg py-12 px-4 w-[78%] mx-auto">
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 items-center">
-          <div className="h-64 bg-green-200 rounded-xl"> <img src={mapImg}/> </div>
+          <div className="h-50 bg-green-200 rounded-xl"> <img src={mapImg} className='h-full w-full'/> </div>
           <div>
             <h3 className="text-2xl font-semibold mb-4">Built-in Google Maps Integration</h3>
             <p className="text-gray-700">Effortlessly mark trees on the map with just a few clicks using GPS coordinates. This feature allows you to accurately log tree locations, plan job efficiently, and ensure precise tracking. Need to visit a site? Get instant direction to any marked tree with a single click, making navigation seamless and hassle-free</p>
@@ -191,7 +191,7 @@ export default function App() {
 }
 
 const FeatureCard = ({ title }) => (
-  <div className=" mx-auto w-[85] md:w-80 border border-2 border-gray-300 p-6 bg-white shadow rounded-xl">
+  <div className=" mx-auto w-[85] md:w-55 border border-2 border-gray-300 p-6 bg-white shadow rounded-xl">
     <h4 className="text-lg font-bold mb-2">{title}</h4>
     <p className="text-gray-600"> Easy assign jobs to your team and track who's available and what they are working on. Lets free with the task pressure and get relaxed with out arbTool. </p>
   </div>
